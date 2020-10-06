@@ -46,6 +46,10 @@ Other technologies used
 ## Setup
 There are two parts in this project. 
 ### 1. Viola Jones Face Detection
+The Viola Jones Algorithm was developed around 2001, and is a form of an Essemble Classifier.
+
+The Essemble Classifier consists of small weak classfier in cascaded feature in order to find out some features in the input images. The Essembler Classifier are effecient as the images that pass the introductory classifier layers only make it to the more complex layers, the deeper the image is passed into the cascade the complex tests it has to pass. Thus making it sort of a series decision layer kind of an architecture.  
+
 We train a Haar-Cascade for the following problem. Haar-Cascades can be trained easily using pre-defined functions in OpenCV.
 
 Using the [PrepareData_ForCascade.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/PrepareData_ForCascade.ipynb) we create the postive and negative samples for training the Haar-Cascade in OpenCV.
