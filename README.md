@@ -61,12 +61,11 @@ Eigen Faces is a method based upon the famous PCA Reduction technique.
 
 In this method, we normalize all the images by subtracting them with an average face. This average face is caculated by taking a mean of all the pixel values of the faces. We get this average face ![Average Face](images_readme/Averageface.png)
 
-Then these normalised images are used to calculate a covariance matrix of size m by m (m = number of images). For this covariance matrix, we calculate the eigen values and eigen vectos. These are the 20 Eigen values in the decreasing order of their value.
-![Eigen Values](images_readme/EigenValues.png)
+Then these normalised images are used to calculate a covariance matrix of size m by m (m = number of images). For this covariance matrix, we calculate the eigen values and eigen vectos. These are the 20 Eigen values in the decreasing order of their value. ![Eigen Values](images_readme/EigenValues.png)
 
-These are the Eigen faces corresponding to the top 5 eigen values.![Eigen Faces](images_readme/EigenFaces.png)
+These are the Eigen faces corresponding to the top 5 eigen values. ![Eigen Faces](images_readme/EigenFaces.png)
 
-When looking at the covariance matrix, we observe that, Eigen face method has some problems yet the observation show that it is indeed a good method. ![](images_readme/CovMat.png)
+When looking at the covariance matrix, we observe that, Eigen face method has some problems yet the observation show that it is indeed a good method. ![Covariance Matrix](images_readme/CovMat.png)
 
 Implemention for Eigen Faces is present in the [EigenFace_Method.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/EigenFace_Method.ipynb).
 * Train Accuracy: 60-80% ( * depending on the threshold)
