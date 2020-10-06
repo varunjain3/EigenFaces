@@ -10,9 +10,8 @@ method to recognise various faces.
 * [Dataset](#dataset)
 * [Technologies](#technologies)
 * [Setup](#setup)
-
-## General info
-This project is simple Lorem ipsum dolor generator.
+    * [Face Detection](#1.-Viola-Jones-Face-Detection)
+    * [Face Recognition](#2.-Eigen-Faces---Face-Recognition)
 
 ## Problem Statement
 You all are aware that face recognition is a method of identifying or verifying the identity of an individual using their face. A typical face recognition system involves face detection followed by classification. In this assignment, you will be implementing the classic Viola Jones Algorithm for detecting the face(s) in the image and then classify the detected faces using the idea of Eigen Faces.
@@ -35,15 +34,29 @@ fill in the following form. Let us know if you have any problems.  (NOTE: This w
 It will NOT work with Internet Explorer or Netscape 6.)
 
 ## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+The project uses Python >= 3.5
+
+Other technologies used
+* Jupyter Notebook
+* OpenCV
+* Pillow
+* Matplotlib
+* Numpy
+* Tqdm
+
+##### * The project is also compatible with Google Colabaratory
 	
 ## Setup
-To run this project, install it locally using npm:
+There are two parts in this project. 
+### 1. Viola Jones Face Detection
+We train a Haar-Cascade for the following problem. Haar-Cascades can be trained easily using pre-defined functions in OpenCV.
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
+Using the [PrepareData_ForCascade.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/PrepareData_ForCascade.ipynb) we create the postive and negative samples for training the Haar-Cascade in OpenCV
+
+After getting the data ready for training the Cascade, we use a [repository](https://github.com/mrnugget/opencv-haar-classifier-training) provided by [mrnugget](https://github.com/mrnugget). The classifier training code is present in the [Train_Cascade.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/Train_Cascade.ipynb)
+
+For this project we have trained our Cascade Classifier using the Yale Dataset and its flipped images. We procured the negative images from [repository](https://github.com/JoakimSoderberg/haarcascade-negatives) provided by [JoakimSoderberg](https://github.com/JoakimSoderberg).
+
+The trained classifier .xml files are stored in the [classifier folder](https://github.com/varunjain3/EigenFaces/tree/master/classifier). To demonstrate our trained classifier, we have created another file [Testing_TrainedClassifier.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/Testing_TrainedClassifier.ipynb) 
+
+### 2. Eigen Faces - Face Recognition
