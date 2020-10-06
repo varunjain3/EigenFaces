@@ -30,10 +30,6 @@ The [Yale Face Database](http://cvc.cs.yale.edu/cvc/projects/yalefaces/yalefaces
 There are 11 images per subject, one per different facial expression or configuration: 
 center-light, w/glasses, happy, left-light, w/no glasses, normal, right-light, sad, sleepy, surprised, and wink.
 
-The database is publically available for non-commercial use. In order for us to track those using it, please 
-fill in the following form. Let us know if you have any problems.  (NOTE: This works only with Netscape 4.75 (and below) under Windows or Linux/Unix. 
-It will NOT work with Internet Explorer or Netscape 6.)
-
 ## Technologies
 The project uses Python >= 3.5
 
