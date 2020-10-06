@@ -30,10 +30,6 @@ The [Yale Face Database](http://cvc.cs.yale.edu/cvc/projects/yalefaces/yalefaces
 There are 11 images per subject, one per different facial expression or configuration: 
 center-light, w/glasses, happy, left-light, w/no glasses, normal, right-light, sad, sleepy, surprised, and wink.
 
-The database is publically available for non-commercial use. In order for us to track those using it, please 
-fill in the following form. Let us know if you have any problems.  (NOTE: This works only with Netscape 4.75 (and below) under Windows or Linux/Unix. 
-It will NOT work with Internet Explorer or Netscape 6.)
-
 ## Technologies
 The project uses Python >= 3.5
 
@@ -72,6 +68,9 @@ These are the Eigen faces corresponding to the top 5 eigen values.![Eigen Faces]
 
 
 Implemention for Eigen Faces is present in the [EigenFace_Method.ipynb](https://github.com/varunjain3/EigenFaces/blob/master/EigenFace_Method.ipynb).
+
+* Train Accuracy: 60-80%
+* Test Accuracy: 50-70%
 
 ## References
 1. P. Viola and M. Jones, "Rapid object detection using a boosted cascade of simple features," Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001, Kauai, HI, USA, 2001, pp. I-I, doi: 10.1109/CVPR.2001.990517.
